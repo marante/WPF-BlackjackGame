@@ -11,10 +11,9 @@
         public string Name { get; set; }
         public int? Money { get; set; }
 
-        public Player(string name, int money)
+        public Player(string name)
         {
             Name = name;
-            Money = money;
         }
 
     }

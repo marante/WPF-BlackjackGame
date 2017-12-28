@@ -1,6 +1,7 @@
 ﻿using GameCardLib;
 namespace Assignment_5.ViewModels
 {
+    /// <inheritdoc />
     /// <summary>
     ///     Viewmodel for the actual game.
     /// </summary>
@@ -12,9 +13,9 @@ namespace Assignment_5.ViewModels
         public Hand Hand { get; set; }
         public Player Player { get; set; }
 
-        public GameViewModel(string name, int money)
+        public GameViewModel(string name)
         {
-            Player = new Player(name, money);
+            Player = new Player(name);
         }
     }
 }
